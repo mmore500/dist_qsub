@@ -20,7 +20,7 @@ A run_list file is a series of runs of experiments that you want to run on the H
 
   class_pref - Set this to 200 unless you know what you're doing. Supported classes 91, 92, 95, 150 (intel14), 200 (intel16).
 
-  walltime - ints only, in hours. If you're using checkpointing, this should be 4.
+  walltime - ints only, in hours. (Only relevant when checkpointing is not used. Checkpointed jobs run in 4 hour increments.)
 
   mem_request - in gigabytes
 
