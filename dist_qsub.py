@@ -62,7 +62,8 @@ settings = {}
 processes = []
 for line in fd:
 
-    if line.find('#') > -1 and line[max(0,line.find('#')-1)] != '\':
+
+    if line.find('#') > -1 and line[max(0,line.find('#')-1)] != '\\': 
         line = line[:line.find('#')]
 
     line = line.strip().lstrip() ## strip off the leading and following whitespace.
